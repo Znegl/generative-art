@@ -1,0 +1,9 @@
+#canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    mask-image: radial-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .7)), url('/assets/compressed/grunge-texture-seamless-PNG-by-PhotoshopSupply16.png');
+    mask-size: 100vmax, 50%;
+    mask-position: center;
+}

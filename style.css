@@ -1,18 +1,17 @@
 * {
     box-sizing: border-box;
-}
-
-html, body {
     margin: 0;
     padding: 0;
 }
 
 body {
-    /*
-    background-image: radial-gradient(hsl(270 50% 10% / 95%), hsl(270 50% 5% / 98%));
-    */
     background-image: radial-gradient(hsl(270 50% 10% / 95%), hsl(270 50% 5% / 98%)), url('/assets/compressed/grunge-texture-by-PhotoshopSupply2.jpg');
     background-size: cover;
+    min-height: 100vh;
+    color: white;
+    font-family: Nunito, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 body::after {
@@ -27,12 +26,43 @@ body::after {
     pointer-events: none;
 }
 
-#canvas {
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    mask-image: radial-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .7)), url('/assets/compressed/grunge-texture-seamless-PNG-by-PhotoshopSupply16.png');
-    mask-size: 100vmax, 50%;
-    mask-position: center;
+h1 {
+    font-family: Bhutuka Expanded One, sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+}
+
+ul.button-list {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 3rem;
+    justify-content: center;
+}
+
+a.button {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    background: #236ca452;
+    padding: .5rem 1rem;
+    white-space: nowrap;
+    color: inherit;
+    border-radius: .25rem;
+}
+
+a.button:not(:hover) {
+    text-decoration: none;
+}
+
+a.button > .details {
+    position: absolute;
+    font-family: Gochi Hand, "Comic Sans MS", sans-serif;
+    font-size: .75em;
+    right: 0;
+    bottom: 0;
+    transform: rotate(-3deg) translate(20%, .5rem);
+    z-index: 1;
 }

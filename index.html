@@ -1,11 +1,38 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Generative Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Gochi+Hand&family=Nunito:wght@300&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+      body {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
+      }
+  </style>
 </head>
 <body>
-<canvas id="canvas" width="1000" height="1000"></canvas>
-<script src="script.js"></script>
+<h1>Generative Art</h1>
+
+<ul class="button-list">
+  <li>
+    <a href="/grungy-ghosts-and-stuff" class="button">Grungy Ghosts and Stuff <span class="details">— all random, updates on click</span></a>
+  </li>
+  <li>
+    <a href="/christmas-trees" class="button">Christmas Trees <span
+      class="details">— with text input as seeds</span></a>
+  </li>
+</ul>
+
 </body>
 </html>
+

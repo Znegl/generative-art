@@ -429,7 +429,7 @@ function drawSquiggle(x, y, r) {
 
   ctx.beginPath()
 
-  drawSquiggleInternal(x1, x1 + blockWidth, y1 + blockHeight / 4 + (blockHeight / 2 * Math.random()) , 5, r * .2)
+  drawSquiggleInternal(x1, x1 + blockWidth, y1 + blockHeight / 4 + (blockHeight / 2 * Math.random()), 5, r * .2)
 
   ctx.stroke()
 }
