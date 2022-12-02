@@ -114,9 +114,9 @@ class DemoThingy {
     this.drawEye(centerX - treeWidthLeft / 2.5, treeHeight / 2.5, this.randomBetween(5, 10), pupilOffsetX, pupilOffsetY)
 
     // Right eye
-    this.drawEye(centerX + treeWidthLeft / 2.5, treeHeight / 2.5, this.randomBetween(5, 10), pupilOffsetX, pupilOffsetY)
+    this.drawEye(centerX + treeWidthRight / 2.5, treeHeight / 2.5, this.randomBetween(5, 10), pupilOffsetX, pupilOffsetY)
 
-    this.drawNose(centerX, treeHeight / 1.75, this.randomBetween(4, 15))
+    this.drawNose(centerX, treeHeight / 1.7, this.randomBetween(4, 15))
 
     this.drawMouth(centerX, treeHeight * .55, this.randomBetween(30, 50))
   }
@@ -124,7 +124,7 @@ class DemoThingy {
   drawEye(x, y, r, pupilOffsetX = 0, pupilOffsetY = 0) {
     const yOffset = 10 - r / 1.5
 
-    const gradient = this.ctx.createRadialGradient(x, y, r, x * 1.1, y * .8, r / 5)
+    const gradient = this.ctx.createRadialGradient(x, y, r, x * 1.05, y * .8, r / 5)
 
     gradient.addColorStop(0, `hsl(0 0% 75%)`)
     gradient.addColorStop(1, `hsl(0 0% 100%)`)
@@ -144,7 +144,7 @@ class DemoThingy {
   drawNose(x, y, r) {
     const hue = this.randomBetween(0, 360, 0)
     const saturation = this.randomBetween(20, 70, 0)
-    const gradient = this.ctx.createRadialGradient(x, y, r, x * 1.1, y * .8, r / 5)
+    const gradient = this.ctx.createRadialGradient(x, y, r, x * 1.05, y * .8, r / 5)
 
     gradient.addColorStop(0, `hsl(${hue} ${saturation}% ${this.randomBetween(20, 30, 0)}%)`)
     gradient.addColorStop(1, `hsl(${hue} ${saturation}% ${this.randomBetween(50, 70, 0)}%)`)
